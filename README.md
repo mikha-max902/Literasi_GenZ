@@ -1,11 +1,6 @@
 
 # Literasi_GenZ
 Web interaktif untuk meningkatkan literasi membaca Generasi Z
-literasi_genz/
-│
-├── index.html
-├── style.css
-└── script.js
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -243,3 +238,62 @@ function toggleTheme() {
 // Inisialisasi
 acakBacaan();
 acakPertanyaan();
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tentang</title>
+  <style>
+    :root {
+      --bg-color: #f0f4f8;
+      --text-color: #333;
+      --primary-color: #4f46e5;
+      --secondary-color: #6366f1;
+    }
+
+    [data-theme="dark"] {
+      --bg-color: #1f2937;
+      --text-color: #f3f4f6;
+      --primary-color: #818cf8;
+      --secondary-color: #4f46e5;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: all 0.3s;
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      background-color: var(--secondary-color);
+      padding: 0.5rem 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tentang</h1>
+  </header>
+
+  <main>
+    <p>
+      Web ini dibuat untuk meningkatkan literasi membaca Gen Z secara interaktif, 
+      menampilkan bacaan dan pertanyaan acak, serta memberikan skor berdasarkan jawaban yang benar.
+    </p>
+  </main>
+</body>
+</html>
